@@ -30,6 +30,9 @@ dependencies {
 	testImplementation 'org.springframework.security:spring-security-test:5.5.1'
 
 	compileOnly 'org.projectlombok:lombok:1.18.20'
+	annotationProcessor('org.projectlombok:lombok') // 추가
+	// Build 할때 해당 옵션이 없으면 cannot find symbol 에러가 발생
+	
 	compileOnly 'org.mariadb.jdbc:mariadb-java-client'
 
 	runtimeOnly 'com.h2database:h2:1.4.200'
