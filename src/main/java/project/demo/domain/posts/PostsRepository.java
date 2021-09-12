@@ -2,7 +2,6 @@ package project.demo.domain.posts;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-import project.demo.domain.posts.custom.PostsRepositoryCustom;
 
 import java.util.List;
 
