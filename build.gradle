@@ -29,8 +29,8 @@ dependencies {
 	// 테스트의 사용자 인증 스프링 시큐리티 테스트 라이브러리 추가
 	testImplementation 'org.springframework.security:spring-security-test:5.5.1'
 
-	compileOnly 'org.projectlombok:lombok:1.18.20'
-	annotationProcessor('org.projectlombok:lombok') // 추가
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
 	// Build 할때 해당 옵션이 없으면 cannot find symbol 에러가 발생
 	
 	compileOnly 'org.mariadb.jdbc:mariadb-java-client'
