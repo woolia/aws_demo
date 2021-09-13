@@ -41,3 +41,8 @@ dependencies {
 test {
 	useJUnitPlatform()
 }
+
+//   : '패키지.패키지.메인클래스네임
+manifest {
+	attributes 'Main-Class': 'springboot-pr.demo.DemoApplication'
+}
