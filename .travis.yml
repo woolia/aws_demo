@@ -2,6 +2,9 @@ language: java
 jdk:
   - openjdk8
 
+before_install:
+  - chomod +x gradlew
+
 branches:
   only:
     - dd
@@ -23,6 +26,3 @@ notifications:
   email:
     recipients:
       - zecrar@naver.com
-
-before_install:
-  - chomod +x gradlew
