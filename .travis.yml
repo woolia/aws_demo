@@ -22,4 +22,7 @@ script: "./gradlew clean build"
 notifications:
   email:
     recipients:
-      - zecrar@gmail.com
+      - zecrar@naver.com
+
+before_install:
+  - chomod +x gradlew
