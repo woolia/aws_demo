@@ -63,14 +63,12 @@ public class OAuthAttributes {
         return build;
     }
 
-
-
     public User toEntity(){
         return User.builder()
                 .name(name)
                 .email(email)
                 .picture(picture)
-                .role(Role.GUEST)
+                .role(Role.USER)
                 .build();
     }
 

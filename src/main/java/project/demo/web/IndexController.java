@@ -1,6 +1,7 @@
 package project.demo.web;
 
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,6 +13,7 @@ import project.demo.web.dto.PostsResponseDto;
 
 import javax.servlet.http.HttpSession;
 
+@Slf4j
 @RequiredArgsConstructor
 @Controller
 public class IndexController {
@@ -24,6 +26,7 @@ public class IndexController {
         model.addAttribute("posts" , postsService.findAllDesc());
 
         if (user != null){
+            log.info("{}",user.getName());
             model.addAttribute("loginuserName" , user.getName());
             // userName 이라고 하면 window 의 경우에는 window 사용자명이 나온다고 한다 그래서 아무리 userName에 user.getName() 을 넣어서 index로 이동하더라도
             // 계속 window 사용자명 zecra 가 호출되었던 것이다.
